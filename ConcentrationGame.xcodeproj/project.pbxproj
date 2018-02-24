@@ -26,6 +26,7 @@
 		1628A34A202F2C1B006E11E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1628A351202F45F9006E11E6 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
 		1628A353202F46B1006E11E6 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		16A071522041AA8400128E5D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +43,7 @@
 		1628A332202F2C1B006E11E6 = {
 			isa = PBXGroup;
 			children = (
+				16A071522041AA8400128E5D /* README.md */,
 				1628A33D202F2C1B006E11E6 /* ConcentrationGame */,
 				1628A33C202F2C1B006E11E6 /* Products */,
 			);
