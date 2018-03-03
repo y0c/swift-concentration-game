@@ -10,9 +10,9 @@ import Foundation
 
 class Concentration {
     
-    var cards = [Card]()
+    private(set) var cards = [Card]()
     
-    var indexOfOneAndOnlyFaceUpCard: Int? {
+    private var indexOfOneAndOnlyFaceUpCard: Int? {
         get {
             //뒤집힌 카드가 하나일경우 해당 index 있을경우 nil
             var foundIndex: Int?
@@ -28,6 +28,7 @@ class Concentration {
             return foundIndex
         }
         set {
+            //해당 index를 제외하고 모두 뒤집어준다.(매칭이안됬을경우)
             for index in cards.indices {
                 cards[index].isFaceUp = ( index == newValue )
             }
@@ -35,7 +36,7 @@ class Concentration {
     }
     
     func chooseCard(at index: Int) {
-        
+        assert(cards.indices.contains(index), "Concentration.chooseCard(at: \(index)): chosne index not in the cards")
         if !cards[index].isMatched {
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index {
                 if cards[matchIndex].identifier == cards[index].identifier {
@@ -46,11 +47,11 @@ class Concentration {
             } else {
                 indexOfOneAndOnlyFaceUpCard = index
             }
-            
         }
     }
     
     init(numberOfPairsCards: Int) {
+        assert(numberOfPairsCards > 0 ,"Concentration.init(\(numberOfPairsCards)): you must at least one pair of cards")
         for _ in 1...numberOfPairsCards {
             let card = Card()
             
