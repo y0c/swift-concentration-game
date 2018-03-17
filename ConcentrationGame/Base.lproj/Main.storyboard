@@ -155,10 +155,6 @@
                     </view>
                     <connections>
                         <outlet property="flipCountLabel" destination="bsD-wk-xrf" id="DFz-Zs-IYC"/>
-                        <outletCollection property="cardButtons" destination="qhr-Cm-90l" collectionClass="NSMutableArray" id="Pap-Hc-PP7"/>
-                        <outletCollection property="cardButtons" destination="9fH-bi-frc" collectionClass="NSMutableArray" id="TY3-Oz-0Gc"/>
-                        <outletCollection property="cardButtons" destination="pmt-oV-ys5" collectionClass="NSMutableArray" id="K79-N1-5aP"/>
-                        <outletCollection property="cardButtons" destination="lo5-eV-ddy" collectionClass="NSMutableArray" id="2yV-42-AVM"/>
                         <outletCollection property="cardButtons" destination="rym-T5-4VP" collectionClass="NSMutableArray" id="I0l-tt-oaC"/>
                         <outletCollection property="cardButtons" destination="nb0-ST-Ozv" collectionClass="NSMutableArray" id="bCd-kw-WnK"/>
                         <outletCollection property="cardButtons" destination="jCQ-Bi-8RL" collectionClass="NSMutableArray" id="Kas-qT-fgR"/>
@@ -167,6 +163,10 @@
                         <outletCollection property="cardButtons" destination="QDc-9Y-Exe" collectionClass="NSMutableArray" id="3Gv-Bm-HyV"/>
                         <outletCollection property="cardButtons" destination="ti7-4B-Mdw" collectionClass="NSMutableArray" id="PYj-hQ-8cG"/>
                         <outletCollection property="cardButtons" destination="Tk9-k8-wmZ" collectionClass="NSMutableArray" id="922-YX-fib"/>
+                        <outletCollection property="cardButtons" destination="qhr-Cm-90l" collectionClass="NSMutableArray" id="5wK-tj-qva"/>
+                        <outletCollection property="cardButtons" destination="pmt-oV-ys5" collectionClass="NSMutableArray" id="XPO-S8-bBy"/>
+                        <outletCollection property="cardButtons" destination="9fH-bi-frc" collectionClass="NSMutableArray" id="upb-c4-6XM"/>
+                        <outletCollection property="cardButtons" destination="lo5-eV-ddy" collectionClass="NSMutableArray" id="juL-wJ-ZoU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
