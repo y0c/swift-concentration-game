@@ -14,18 +14,8 @@ struct Concentration {
     
     private var indexOfOneAndOnlyFaceUpCard: Int? {
         get {
-            //뒤집힌 카드가 하나일경우 해당 index 있을경우 nil
-            var foundIndex: Int?
-            for index in cards.indices {
-                if cards[index].isFaceUp {
-                    if foundIndex == nil {
-                        foundIndex = index
-                    } else {
-                        return nil
-                    }
-                }
-            }
-            return foundIndex
+            //뒤집힌 카드가 하나일경우 해당 index 있을경우 nil        
+            return cards.indices.filter { cards[$0].isFaceUp }.oneAndOnly
         }
         set {
             //해당 index를 제외하고 모두 뒤집어준다.(매칭이안됬을경우)
@@ -60,5 +50,11 @@ struct Concentration {
         
         //TODO: Shuffle the cards
         
+    }
+}
+
+extension Collection {
+    var oneAndOnly: Element? {
+        return count == 1 ? first : nil
     }
 }
